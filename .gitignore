@@ -4,6 +4,10 @@
 /target
 /build
 /.gradle
+/gradlew
+/gradlew.bat
+/settings.gradle
+/gradle
 *.class
 
 # Log file
@@ -20,7 +24,7 @@
 *.rar
 
 ### JetBrains ###
-/.idea
+idea
 *.iml
 
 ### Allure ###
