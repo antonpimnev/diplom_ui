@@ -56,13 +56,18 @@ tasks.withType(Test) {
         }
     }
 }
-task ui_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags "UITests"
-    }
-}
 task ui(type: Test) {
     useJUnitPlatform {
-        includeTags "Ui"
+        includeTags "ui"
+    }
+}
+task search(type: Test) {
+    useJUnitPlatform {
+        includeTags "search"
+    }
+}
+task cart(type: Test) {
+    useJUnitPlatform {
+        includeTags "cart"
     }
 }

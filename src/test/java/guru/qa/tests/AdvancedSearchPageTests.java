@@ -7,7 +7,8 @@ import org.junit.jupiter.api.*;
 import guru.qa.pages.MainPage;
 import guru.qa.pages.AdvancedSearchPage;
 
-@Tag("UITests")
+@Tag("ui")
+@Tag("search")
 public class AdvancedSearchPageTests extends BaseTest {
     private MainPage mainPage = new MainPage();
     private AdvancedSearchPage advancedSearchPage = new AdvancedSearchPage();
@@ -22,7 +23,7 @@ public class AdvancedSearchPageTests extends BaseTest {
     @Owner("Anton Pimnev")
     @Story("Расширенный поиск")
     @DisplayName("Проверка отображения полей на странице поиска")
-    void advancedSearchInputsTest() {
+    void inputsTest() {
         advancedSearchPage.checkElements();
     }
 

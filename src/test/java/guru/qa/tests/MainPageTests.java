@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 
 import static com.codeborne.selenide.Configuration.baseUrl;
 
-@Tag("UITests")
+@Tag("ui")
 public class MainPageTests extends BaseTest {
     MainPage mainPage = new MainPage();
     SearchResultPage searchResultPage = new SearchResultPage();

@@ -13,7 +13,8 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Configuration.baseUrl;
 
-@Tag("UITests")
+@Tag("ui")
+@Tag("cart")
 public class CartPageTests extends BaseTest {
 
     MainPage mainPage = new MainPage();
