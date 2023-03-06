@@ -3,7 +3,7 @@
 ### Веб сайт <a target="_blank" href="https://sturmuniform.ru/">Интернет-магазин sturmuniform.ru</a>
 
 <p align="center">
-<img title="Интернет-магазин sturmuniform.ru" src="images/screens/logo.png">
+<img title="Интернет-магазин sturmuniform.ru" name="logo" src="images/screens/logo.png">
 </p>
 
 ## Содержание:
@@ -119,4 +119,4 @@ allure serve build/allure-results
 <img src="/images/video/videoUItests.gif" alt="video"/></a>
 </p>
 
-[Вернуться к оглавлению ⬆](#Ссылка)
+[Вернуться к оглавлению ⬆](#logo)
