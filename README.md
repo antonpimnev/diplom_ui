@@ -8,14 +8,15 @@
 
 ## Содержание:
 
-- Технологии и инструменты
-- Список проверок, реализованных в тестах
-- Запуск тестов (сборка в Jenkins)
-- Allure-отчет
-- Интеграция с Allure TestOps
-- Уведомление в Telegram о результатах запуска тестов
-- Видео пример прохождения тестов
+- <a href="#tools">Технологии и инструменты</a>
+- <a href="#cases">Список проверок, реализованных в тестах</a>
+- <a href="#launch">Запуск тестов (локально и сборка в Jenkins)</a>
+- <a href="#allure">Allure-отчет</a>
+- <a href="#allure-testops">Интеграция с Allure TestOps</a>
+- <a href="#telegram">Уведомление в Telegram о результатах запуска тестов</a>
+- <a href="#video">Видео пример прохождения тестов</a>
 
+<a id="tools"></a>
 ## Технологии и инструменты
 
 <p align="center">
@@ -31,7 +32,8 @@
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 </p>
 
-## Список проверок, реализованных в автотестах
+<a id="cases"></a>
+## Список проверок, реализованных в тестах
 
 - [x] Проверка наличия логотипа на главной странице
 - [x] Проверка меню на главной странице
@@ -43,6 +45,7 @@
 - [x] Проверка добавление товара в корзину
 - [x] Проверка удаления товара из корзины
 
+<a id="launch"></a>
 ## Запуск тестов
 
 ###  Локальный запуск :
@@ -71,6 +74,7 @@ allure serve build/allure-results
 
 ![This is an image](/images/screens/Jenkins4.png)
 
+<a id="allure"></a>
 ## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/C16-antonpimnev-diplom-ui/2/allure/">Allure report</a>
 
 ###  Главная
@@ -91,7 +95,7 @@ allure serve build/allure-results
 <img title="Allure Graphics" src="images/screens/Allure_Report3.png">
 </p>
 
-
+<a id="allure-testops"></a>
 ## <img src="images/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/launch/20028">Allure TestOps</a>
 ### Общий список тест-кейсов:
 <p align="center">
@@ -108,12 +112,14 @@ allure serve build/allure-results
 <img title="Allure Graphics" src="images/screens/Allure_TestOps-Launch.png">
 </p>
 
+<a id="telegram"></a>
 ## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram о результатах выполнения запуска тестов
 
 <p align="center">
 <img title="Уведомление в Telegram" src="images/screens/TelegramNotification.png" >
 </p>
 
+<a id="video"></a>
 ## <img src="images/logo/Selenoid.svg" width="25" height="25"  alt="Selenoid"/></a> Видео прохождения тестов
 <p align="center">
 <img src="/images/video/videoUItests.gif" alt="video"/></a>
