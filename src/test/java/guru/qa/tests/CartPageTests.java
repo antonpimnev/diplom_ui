@@ -30,7 +30,7 @@ public class CartPageTests extends BaseTest {
     @Test
     @Owner("Anton Pimnev")
     @Story("Корзина")
-    @DisplayName("Быстрый поиск и добавление товара в корзину")
+    @DisplayName("Проверка добавление товара в корзину")
     void addToCartTest() {
         mainPage.quickSearchProduct(testData.testItem);
         searchResultPage.addItemToCart(testData.testItem);
@@ -39,7 +39,7 @@ public class CartPageTests extends BaseTest {
     @Test
     @Owner("Anton Pimnev")
     @Story("Корзина")
-    @DisplayName("Удаление товара из корзины")
+    @DisplayName("Проверка удаления товара из корзины")
     void removeFromCartTest() {
         mainPage.quickSearchProduct(testData.testItem);
         searchResultPage.addItemToCart(testData.testItem);

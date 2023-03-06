@@ -22,7 +22,7 @@ public class AdvancedSearchPageTests extends BaseTest {
     @Test
     @Owner("Anton Pimnev")
     @Story("Расширенный поиск")
-    @DisplayName("Проверка отображения полей на странице поиска")
+    @DisplayName("Проверка отображения полей на странице расширенного поиска")
     void inputsTest() {
         advancedSearchPage.checkElements();
     }
@@ -30,7 +30,7 @@ public class AdvancedSearchPageTests extends BaseTest {
     @Test
     @Owner("Anton Pimnev")
     @Story("Расширенный поиск")
-    @DisplayName("Расширенный поиск с фильтрами")
+    @DisplayName("Проверка результатов расширенный поиска")
     void advancedSearchTest() {
         advancedSearchPage.searchWithFilters();
         searchResultPage.checkCountResultOfSearch(3);

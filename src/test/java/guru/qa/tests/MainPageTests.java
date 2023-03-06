@@ -81,7 +81,7 @@ public class MainPageTests extends BaseTest {
     }
 
     @ValueSource(strings = {"Муляж функционального маркера бедствия FMA MS2000", "Фонарь Olight Baton 3 Pro"})
-    @DisplayName("Проверка результатов поиска")
+    @DisplayName("Проверка результатов быстрого поиска")
     @Owner("Anton Pimnev")
     @Story("Быстрый поиск")
     @ParameterizedTest
