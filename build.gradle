@@ -24,7 +24,7 @@ repositories {
 }
 
 def allureVersion = "2.20.0",
-    selenideVersion = "6.10.3",
+    selenideVersion = "6.12.3",
     junitVersion = "5.9.1"
 
 tasks.withType(JavaCompile) {
