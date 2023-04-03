@@ -24,4 +24,7 @@ public interface WebDriverConfig extends Config {
 
     @Key("remoteUrl")
     String getRemoteUrl();
+
+    @Key("videoUrl")
+    String getVideoUrl();
 }

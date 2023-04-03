@@ -1,6 +1,7 @@
 package guru.qa.helpers;
 
 import com.codeborne.selenide.Selenide;
+import guru.qa.config.WebDriverProvider;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -12,7 +13,9 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
-    private static String VIDEO_URL = "http://192.168.4.55:4444/video/";
+
+
+    private static String VIDEO_URL = WebDriverProvider.config.getVideoUrl();
     @Attachment(value = "{attachName}", type = "image/png")
     public static byte[] screenshotAs(String attachName) {
         return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);

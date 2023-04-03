@@ -5,7 +5,7 @@ import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class WebDriverProvider {
-    private static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
+    public static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
     public static void config() {
         Configuration.pageLoadTimeout = 10000;
