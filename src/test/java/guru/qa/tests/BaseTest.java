@@ -1,5 +1,6 @@
 package guru.qa.tests;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -28,7 +29,9 @@ public class BaseTest {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
-        Attach.addVideo();
+        if (WebDriverProvider.config.getRemoteUrl() != null) {
+            Attach.addVideo();
+        }
         closeWebDriver();
     }
 }
